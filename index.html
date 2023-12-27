@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Homework 8</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(232, 227, 227);
+        }
+
+        header {
+            padding: 10px;
+            background-color: lightcyan;
+        }
+
+        nav {
+            margin: 0 auto;
+            max-width: 1600px;
+
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+
+            text-align: end;
+            align-items: center;
+            gap: 10px;
+        }
+
+        nav h1:nth-child(1) {
+            grid-column: 1 / 4;
+        }
+
+        nav a:hover {
+            background-color: lightcoral;
+            text-align: center;
+            color: white;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: darkred;
+            font-style: oblique;
+            text-transform: lowercase;
+        }
+
+        nav h1 {
+            color: darkred;
+            font-style: italic;
+            text-align: center;
+        }
+
+        nav h1 div:first-child {
+            font-weight: 900;
+        }
+
+        nav h1 div:last-child {
+            text-transform: lowercase;
+            font-weight: 500;
+        }
+
+        main {
+            margin: 0px;
+            padding: 20px;
+            background-color: lightgoldenrodyellow;
+        }
+
+        section {
+            max-width: 1600px;
+            margin: 60px auto;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            align-items: center;
+        }
+
+        section div h2 {
+            color: darkred;
+            font-size: 18px;
+        }
+
+        section div p {
+            color: darkgrey;
+            font-size: 14px;
+        }
+
+        section img {
+            min-width: 100%;
+            height: 100%;
+            border: 6px solid white;
+            border-radius: 7px;
+            box-shadow: 3px 3px 3px lightgray;
+        }
+
+        article {
+            max-width: 1600px;
+            margin: 20px auto;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 200px 200px;
+            gap: 20px;
+            align-items: start;
+            border: 10px, solid black;
+        }
+
+        article img {
+            min-width: 100%;
+            height: 100%;
+            border: 6px solid white;
+            border-radius: 7px;
+            box-shadow: 3px 3px 3px lightgray;
+        }
+
+        article div h3 {
+            color: darkred;
+            font-size: 18px;
+        }
+
+        article div p {
+            color: darkgrey;
+            font-size: 14px;
+        }
+
+
+        hr {
+            border: 1px solid darkred;
+        }
+
+        footer {
+            background-color: antiquewhite;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+            font-size: 10px;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>
+                <div>Iva's</div>
+                <div>Photo booth</div>
+            </h1>
+            <a href="#">Locations</a>
+            <a href="#">Photoshoots</a>
+            <a href="#">Tutorials</a>
+        </nav>
+    </header>
+    <main>
+        <hr>
+        <section>
+            <div>
+                <img src="img/image1.jpg" alt="camera" style="width: 200px; height: auto;">
+            </div>
+            <div>
+                <h2>Photography</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, eum atque
+                    perferendis laborum maiores eligendi voluptates error consequuntur
+                    alias voluptatibus ducimus molestiae libero sit excepturi pariatur a.
+                    Quos, eos deleniti. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat dolorum, sed
+                    maiores
+                    neque aperiam totam accusamus,
+                    mollitia porro alias inventore corporis reiciendis voluptatem officia aliquid id! Unde tempora
+                    debitis beatae.</p>
+            </div>
+        </section>
+        <hr>
+        <article>
+            <div>
+                <img src="img/image2.jpg" style="width: 200px; height: auto;" alt="landscape">
+            </div>
+            <div>
+                <img src="img/image3.jpg" style="width: 200px; height: auto;" alt="tiger">
+            </div>
+            <div>
+                <img src="img/image2.jpg" style="width: 200px; height: auto;" alt="landscape">
+            </div>
+            <div>
+                <h3>History</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ratione esse ipsa hic rerum? Nesciunt maiores sapiente eius
+                    quaerat quis quae quidem beatae, enim quasi fugiat dolor n
+                    eque obcaecati nisi temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto
+                    dolorem
+                    repellat maiores, aliquam hic eligendi vitae, magnam expedita commodi dolores,
+                    atque nisi cumque rerum nobis. Voluptatibus quisquam modi maxime officia.</p>
+            </div>
+            <div>
+                <h3>History</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ratione esse ipsa hic rerum? Nesciunt maiores sapiente eius
+                    quaerat quis quae quidem beatae, enim quasi fugiat dolor n
+                    eque obcaecati nisi temporibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Autem quod doloremque, odit perferendis debitis, earum hic tenetur at suscipit veritatis dolore
+                    voluptas.
+                    Soluta optio perspiciatis totam aliquam beatae, architecto accusamus.</p>
+            </div>
+            <div>
+                <h3>History</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Ratione esse ipsa hic rerum? Nesciunt maiores sapiente eius
+                    quaerat quis quae quidem beatae, enim quasi fugiat dolor n
+                    eque obcaecati nisi temporibus! Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Debitis dolorum dicta praesentium incidunt deserunt accusamus quam. Perspiciatis vel mollitia
+                    incidunt,
+                    deserunt culpa possimus dolores eum laboriosam, repellendus nostrum facilis ipsum.</p>
+            </div>
+        </article>
+        <hr>
+    </main>
+    <footer>
+        <p><a href="#">About</a></p>
+        <p><a href="#">Latest news</a></p>
+        <p><a href="#">Contact</a></p>
+        <p class="copyright">Copyright &copy; 2023 Iva's Photo booth</p>
+    </footer>
+</body>
+
+</html>
